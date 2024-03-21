@@ -43,7 +43,19 @@ const obj3 = {...obj1 , ...obj2 ,...obj4}
 
 // console.log(tinderuser);
 
-console.log(Object.keys(tinderuser));
-console.log(Object.values(tinderuser));
-console.log(Object.entries(tinderuser));
-console.log(tinderuser.hasOwnProperty('name'));
+// console.log(Object.keys(tinderuser));
+// console.log(Object.values(tinderuser));
+// console.log(Object.entries(tinderuser));
+// console.log(tinderuser.hasOwnProperty('name'));
+
+const course = {
+    coursename:"Js in hindi",
+    courseprice:100000,
+    courseInstructor: "Hitesh chaoudhary"
+}
+
+
+console.log(course.courseprice);
+const {courseprice:price ,coursename ,courseInstructor} = course
+
+console.log(price ,courseInstructor);
