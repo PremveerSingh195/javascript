@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello javascript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayLang = function () {
+        console.log("Hello javascript");
+    }
+    const textChange = function () {
+        document.querySelector('h1').innerHTML = "Hello full stack javscript"
+    }
+    const changeme =  setTimeout(textChange,3000)
+
+    document.querySelector('#stop').addEventListener('click' , function () {
+        console.log("cleartimeout");
+        clearTimeout(changeme)
+    } )
+</script>
+</html>
